@@ -3,7 +3,7 @@ import { DataContext } from "../App";
 import QuestionsData from "../data/QuestionsData.";
 
 const Score = () => {
-    const {score} = useContext(DataContext)
+    const {score,setAppState,setScore} = useContext(DataContext)
     const restartApp=()=>{
         setScore(0)
         setAppState("menu")
